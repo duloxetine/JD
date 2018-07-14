@@ -5,6 +5,9 @@
 
 #include <iconv.h>
 #include <string>
+#ifndef ICONV_CONST
+#define ICONV_CONST
+#endif
 
 // iconv の内部で確保するバッファサイズ(バイト)
 //  BUF_SIZE_ICONV_IN を超える入力は扱えないので注意

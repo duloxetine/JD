@@ -1,0 +1,4 @@
+#!/bin/sh
+for i in $*; do
+	gdk-pixbuf-csource --raw --name=inline_icon $i > $(basename $i .png).h
+done
